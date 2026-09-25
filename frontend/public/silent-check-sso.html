@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Silent SSO Check</title>
+  </head>
+  <body>
+    <script>
+      // Keycloak silent SSO check helper
+      // envía la URL completa al padre para que keycloak-js la procese
+      parent.postMessage(location.href, location.origin);
+    </script>
+  </body>
+</html>
